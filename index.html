@@ -45,29 +45,11 @@
 					
 					<audio id="mySong" src="audio/PentapatiPawanSai.mp3" type="audio/mp3"> </audio>
 					
-					<script>
-					var mySong = document.getElementById("mySong");
-					var icon = document.getElementById("icon");
-						
-					mySong.onclick = function()			
-					icon.onclick = function(){
-						mySong.play();
-						icon.play();
-					} 
-					</script>
+					
 					
 					<audio id="mySongs" src="audio/Pawan.mp3" type="audio/mp3"> </audio>
 
-					<script>
-						var mySongs = document.getElementById("mySongs");
-						var icons = document.getElementById("icons");
-						
-						mySongs.onclick = function()				
-						icons.onclick = function(){
-							mySongs.play();
-							icons.play();
-						}
-						</script> 
+					
 					
 				<!-- Header -->
 					<header id="header">
@@ -172,7 +154,27 @@
 			</div>
 
 		<!-- Scripts -->
-		
+		<script>
+					var mySong = document.getElementById("mySong");
+					var icon = document.getElementById("icon");
+						
+					mySong.onclick = function()			
+					icon.onclick = function(){
+						mySong.play();
+						icon.play();
+					} 
+					</script>
+		<script>
+						var mySongs = document.getElementById("mySongs");
+						var icons = document.getElementById("icons");
+						
+						mySongs.onclick = function()				
+						icons.onclick = function(){
+							mySongs.play();
+							icons.play();
+						}
+						</script> 
+			
 		<script>document.onkeydown = function(e) {
   if(event.keyCode == 123) {
      return false;
