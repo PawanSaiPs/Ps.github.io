@@ -43,12 +43,13 @@
 						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 												</ul>-->
 					
-					<audio id="mySong" src="audio/PentapatiPawanSai.mp3"> </audio>
+					<audio id="mySong" src="audio/PentapatiPawanSai.mp3" type="audio/mp3"> </audio>
 					
 					<script>
 					var mySong = document.getElementById("mySong");
 					var icon = document.getElementById("icon");
-			
+						
+					mySong.onclick = function()			
 					icon.onclick = function(){
 						mySong.play();
 						icon.play();
@@ -60,7 +61,8 @@
 					<script>
 						var mySongs = document.getElementById("mySongs");
 						var icons = document.getElementById("icons");
-				
+						
+						mySongs.onclick = function()				
 						icons.onclick = function(){
 							mySongs.play();
 							icons.play();
